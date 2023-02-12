@@ -1,0 +1,106 @@
+/* NAVBAR BS */
+.sm-icons{
+    flex-direction: row;
+    
+}
+
+.sm-icons .nav-link{
+    padding-right: 1em;
+    color: gray;
+    font-size: 23px;
+        
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+
+/* MENU HTML CSS grids */
+#menu{
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(2, 250px);
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas: 
+    "about about projects projects"
+    "about about posts contact";
+}
+
+#menu .tile{
+   height: 100%; 
+   overflow: hidden;
+   cursor: pointer;
+}
+
+#menu .tile a {
+    text-decoration: none;
+}
+
+#menu .tile .front{
+    color: white;
+    background-color: black;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+
+    background-size: cover;
+    background-position: center center;
+
+    transition: all 0.3s ease;
+}
+
+#menu .tile .back{
+    background-color: #222;
+    color: white;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#menu .tile:hover .front{
+    margin-top: -100%;
+}
+
+#menu .projects-tile:hover .front{
+    margin-top: -50%;
+}
+
+.about-tile{
+    grid-area: about;
+}
+
+.projects-tile{
+    grid-area: projects;
+}
+
+.posts-tile{
+    grid-area: posts;
+}
+
+.contact-tile{
+    grid-area: contact;
+}
+
+
+/* ACERCA DE BS grids */
+

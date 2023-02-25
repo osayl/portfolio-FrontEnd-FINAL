@@ -36,8 +36,8 @@ section{
     justify-content: center;
     align-content: center;
     grid-template-areas: 
-    "about about projects projects"
-    "about about posts contact";
+    "about about educacion educacion"
+    "about about xperience contact";
 }
 
 #menu .tile{
@@ -81,7 +81,7 @@ section{
     margin-top: -100%;
 }
 
-#menu .projects-tile:hover .front{
+#menu .educacion-tile:hover .front{
     margin-top: -50%;
 }
 
@@ -89,12 +89,12 @@ section{
     grid-area: about;
 }
 
-.projects-tile{
-    grid-area: projects;
+.educacion-tile{
+    grid-area: educacion;
 }
 
-.posts-tile{
-    grid-area: posts;
+.experiencia-tile{
+    grid-area: xperience;
 }
 
 .contact-tile{

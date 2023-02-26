@@ -2,14 +2,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8">
+    <meta name="author" content="Oscar Ayala">
+    <meta name="description" content="Portfolio Web">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi portfolio</title>
+    <!-- Titulo -->
+    <title>Oscar Ayala | Portfolio Web</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x.icon" href="images/favicon-o.png">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorgin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     <style>
+    /* MENU */
     #menu .about-tile .front{
     background-image: url(images/aqt_01.jpg);
     }
@@ -30,6 +39,7 @@
       padding: 100px 0px;
     }
 
+    /* EXPERIENCIA */
     .carousel {
       position: relative;
     }
@@ -53,14 +63,69 @@
       margin: 0!important;
       position: relative;
       width: 25%!important;
-
     }
 
+    .carousel-indicators button:before {
+      position: absolute;
+      content: "";
+      border-top: 1px solid #c8cbd0;
+      width: 100%;
+      left: 0;
+    }
+
+    .carousel-indicators button h4 {
+      margin-top: -41px;
+      position: absolute;
+      left: 52%;
+      transform: translateX(-50%);
+    }
+
+    .carousel-indicators button i {
+      margin-top: -8px;
+      position: absolute;
+    }
+
+    .carousel-indicators button:active i {
+      color: black;
+    }
+
+    .carousel-indicators button:active h4 {
+      color: black;
+      font-size: 34px;
+      position: absolute;
+      text-align: center;
+      margin-top: -49px;
+    }
+
+    .experience-slide-text h3 {
+      margin-bottom: 30px;
+      font-size: 27px;
+      color: lightslategrey;
+    }
+
+    .experience-slide-one-img {
+      text-align: center;
+      width: 100%;
+    }
+
+    .carousel-control-prev-icon {
+    filter: invert(50%);
+    width: 50%;
+    margin-left: -200px;
+    }
+
+    .carousel-control-next-icon {
+    filter: invert(50%);
+    width: 50%;
+    margin-right: -200px;
+    }
+
+     
     </style>
 </head>
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg" style="background-color: rgb(172, 172, 172);"> 
+    <nav class="navbar navbar-expand-md" style="background-color: rgb(172, 172, 172);"> 
       <div class="container-fluid p-4">
         <a class="navbar-brand" href="#"><img src="images/logo-arg-prog-H.png" alt="logo-arg-prog" width="200"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,15 +183,15 @@
     
     <!--ACERCA DE-->
     <section id="about">
-      <div class="container-sm p-5">
-        <div class="row">
+      <div class="container-md p-5">
+        <div class="row p-5">
           <h3><div class="text-center h3 fw-bold">ACERCA DE</div></h3>
         </div>
         
         <div class="row justify-content-center align-content-center">
-          <div class="col-3 p-1">
-            <div class="card text-bg-dark float-end" style="height: 32rem;">
-              <img src="images/CASA_Interior Mañana.jpg" class="card-img" alt="..." class="img-fluid" style="height: 32rem;">
+          <div class="col-sm p-1">
+            <div class="card text-bg-dark float-end card-border w-100">
+              <img src="images/CASA_Interior Mañana.jpg" class="card-img" alt="...">
               <div class="card-img-overlay">
                 <h5 class="card-title">Acerca de mi</h5>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -134,8 +199,8 @@
               </div>
             </div>
           </div>
-          <div class="col-3 p-1">
-            <div class="card" style="height: 32rem;">
+          <div class="col-sm p-1">
+            <div class="card card-border">
               <img src="images/logo-o.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Dev</h5>
@@ -144,8 +209,8 @@
               </div>
             </div>                         
           </div>    
-          <div class="col-3 p-1">
-            <div class="card" style="height: 32rem;">
+          <div class="col-sm p-1">
+            <div class="card card-border">
               <img src="images/logo-o.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Arch</h5>
@@ -154,13 +219,13 @@
               </div>
             </div>                         
           </div> 
-          <div class="col-3 p-1">
-            <div class="card" style="height: 32rem;">
+          <div class="col-sm p-1">
+            <div class="card card-border">
               <img src="images/logo-o.png" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Skills</h5>
-                <p class="card-text">Softwares de modelado y renderizado 3D</p>                    
-                <a href="#" class="btn btn-light btn-outline-dark">Más info</a>
+                <p class="card-text">Modelado y renderizado 3D</p>                    
+                <p><small class="card-text">Formación: Universidad de Mendoza</small></p>
               </div>
             </div>                         
           </div>       
@@ -170,25 +235,30 @@
     
     <!--EXPERIENCIA--> 
     <section id="xperience">
-      <div class="container">
-        <h3><div class="text-center h3 fw-bold">EXPERIENCIA</div></h3>
+      <div class="row p-5"><h3><div class="text-center h3 fw-bold">EXPERIENCIA</div></h3>
+      </div>
+      <div class="container-md p-5">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
             class="active" aria-current="true" aria-label="Slide 1">
             <h4>2006</h4>
+            <i class="fa-solid fa-bullseye"></i>
             </button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
             aria-label="Slide 2">
             <h4>2010</h4>  
+            <i class="fa-solid fa-bullseye"></i>
             </button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
             aria-label="Slide 3">
             <h4>2022</h4>
+            <i class="fa-solid fa-bullseye"></i>
             </button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
             aria-label="Slide 4">
             <h4>2023</h4>
+            <i class="fa-solid fa-bullseye"></i>
             </button>
           </div>
           <div class="carousel-inner">
@@ -199,9 +269,9 @@
                     <img class="rounded img-fluid" src="images/xpr_1_oha.png" alt="">
                   </div>
                 </div>
-                <div class="col-md-7">
-                  <div class="experience-slide-one-text">
-                    <h3>Abril 2005</h3>
+                <div class="col-md-7 p-3">
+                  <div class="experience-slide-text">
+                    <h3>Abril 2006</h3>
                     <p>Empresa constructora enfocada en la construcción de obra pública.</p>
                     <p>Administrativo de obra en la construcción del Complejo Penitenciario N°3 ALMAFUERTE.</p>
                     <p>Administrativo en oficinas centrales de la empresa.</p>
@@ -216,8 +286,8 @@
                     <img class="rounded img-fluid" src="images/xpr_2_fundco.png" alt="">
                   </div>
                 </div>
-                <div class="col-md-7">
-                  <div class="experience-slide-one-text">
+                <div class="col-md-7 p-3">
+                  <div class="experience-slide-text">
                     <h3>Agosto 2010</h3>
                     <p>Fundación destinada a la ejecución de los planes sanitarios de erradicación de enfermedades en bovinos.</p>
                     <p>Administrativo en oficinas centrales de la fundación.</p>
@@ -228,14 +298,14 @@
             </div>
             <div class="carousel-item">
               <div class="experience-slide-one row h-100 align-items-center">
-                <div class="col-md-5">
+                <div class="col-md-5 p-3">
                   <div class="experience-slide-one-img">
                     <img class="rounded img-fluid" src="images/xpr_3_bgp.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-7">
-                  <div class="experience-slide-one-text">
-                    <h3>Agosto 2020</h3>
+                  <div class="experience-slide-text">
+                    <h3>Junio 2022</h3>
                     <p>Empresa constructora enfocada en la construcción de obra pública y construcción de plantas de gas natural.</p>
                     <p>Dibujante técnico de planos de obras civiles y de gas.</p>
                     <p>Software utilizado para los trabajos: AutoCAD.</p>
@@ -245,13 +315,13 @@
             </div>
             <div class="carousel-item">
               <div class="experience-slide-one row h-100 align-items-center">
-                <div class="col-md-5">
+                <div class="col-md-5 p-3">
                   <div class="experience-slide-one-img">
                     <img class="rounded img-fluid" src="images/xpr_4_praxes.png" alt="">
                   </div>
                 </div>
                 <div class="col-md-7">
-                  <div class="experience-slide-one-text">
+                  <div class="experience-slide-text">
                     <h3>Febrero 2023</h3>
                     <p>Empresa constructora enfocada en la construcción de obra privada.</p>
                     <p>Dibujante 3D y renderista.</p>
@@ -278,7 +348,8 @@
     <!--EDUCACION-->
 
     <!--SKILLS-->
-    
+
+    <script src="https://kit.fontawesome.com/54d78b391c.js" crossorigin="anonymous"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script></body>
 </html>

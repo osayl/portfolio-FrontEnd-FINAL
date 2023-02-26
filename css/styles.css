@@ -28,7 +28,7 @@ section{
 
 /* MENU HTML CSS grids */
 #menu{
-    background-color: gainsboro;
+    background-color: rgb(180, 180, 180);
     display: grid;
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: repeat(2, 250px);
@@ -103,4 +103,26 @@ section{
 
 
 /* ACERCA DE BS grids */
+
+#about{
+    background-color: rgba(190, 190, 190, 0.877);
+}
+
+.card-border{
+    border: solid 1px rgba(220, 220, 220, 0.877);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.02);
+}
+
+/* EXPERIENCIA */
+
+#xperience{
+    background-color: rgba(230, 230, 230, 0.877);
+}
+   
 

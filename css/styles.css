@@ -1,4 +1,8 @@
 /* NAVBAR BS */
+.navbar {
+    background-color: #f5f6f7;
+}
+
 .sm-icons{
     flex-direction: row;
     
@@ -125,4 +129,26 @@ section{
     background-color: rgba(230, 230, 230, 0.877);
 }
    
+/* Adaptable y responsivo */
 
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    #menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "about educacion"
+        "xperience contact"
+        ;
+    }
+
+    #menu .tile:hover .front {
+        margin-top: -50vh;
+    }
+}

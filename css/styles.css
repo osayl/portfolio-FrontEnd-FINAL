@@ -1,3 +1,10 @@
+/* Estilos Generales */
+
+section {
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
 /* NAVBAR BS */
 .navbar {
     background-color: #f5f6f7;
@@ -110,6 +117,8 @@ section{
 
 #about{
     background-color: rgba(190, 190, 190, 0.877);
+    min-height: 450px;
+    
 }
 
 .card-border{
@@ -128,7 +137,137 @@ section{
 #xperience{
     background-color: rgba(230, 230, 230, 0.877);
 }
-   
+
+/* EXPERIENCIA */
+
+.edu-timeline{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.edu-timeline:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(240, 240, 240, 0.863);
+
+}
+
+.edu-timeline ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+.edu-timeline ul li{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+
+}
+
+.edu-timeline ul li:nth-child(odd){
+    float: left;
+    text-align: right;
+    clear: both;
+
+}
+
+.edu-timeline ul li:nth-child(even){
+    float: right;
+    text-align: left;
+    clear: both;
+    
+}
+
+.edu-content{
+    padding-bottom: 20px;
+    border: 1px solid #808080;
+    padding: 10px 10px;
+    border-radius: 20px;
+    background: #fff;
+    text-align: justify;
+    
+}
+
+.edu-timeline ul li:nth-child(odd)::before{
+    content: "";
+    position: absolute;
+    top: 24px;
+    right: -11px;
+    width: 20px;
+    height: 20px;
+    background: #303030;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(190, 190, 190, 0.877);
+
+}
+ 
+.edu-timeline ul li:nth-child(even)::before{
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: -9px;
+    width: 20px;
+    height: 20px;
+    background: #303030;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(190, 190, 190, 0.877);
+
+}
+
+.edu-timeline ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+
+}
+
+.edu-timeline ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+    line-height: 1.7;
+
+}
+
+.edu-timeline ul li h4{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    
+}
+
+.edu-timeline ul li:nth-child(odd) .edu-time {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #45454d;
+    color: #fff;
+    border-radius: 9px;
+
+}
+
+.edu-timeline ul li:nth-child(even) .edu-time {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #45454d;
+    color: #fff;
+    border-radius: 9px;
+
+}
+
 /* Adaptable y responsivo */
 
 @media screen and (max-width: 767px) {
